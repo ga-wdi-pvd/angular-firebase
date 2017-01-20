@@ -4,7 +4,7 @@ We'll take a first dive into Firebase by creating a simple todo app. The model h
 
 ## Bootstrap an Angular Application
 
-Let's start by creating an application app with a single module and controller.
+Let's start by creating an Angular app with a single module and controller.
 
 ```js
 // app.js
@@ -90,7 +90,7 @@ Go ahead and place that `<script>` directly in your HTML like so...
 
 ## Update Firebase Permissions
 
-Because we are not using Firebase's auth functionality in this example, we need to update our database permissions so that anybody can read or write do it. We can do this by returning to the page for our database in the Firebase Console and clicking the "Database" option in the left sidebar. Then, click the `Rules` tab under the `Realtime Database` header.
+Because we are not using Firebase's auth functionality in this example, we need to update our database permissions so that anybody can read or write to it. We can do this by returning to the page for our database in the Firebase Console and clicking the "Database" option in the left sidebar. Then, click the `Rules` tab under the `Realtime Database` header.
 
 Once there, modify the JSON you see so that it looks like this...
 
@@ -204,7 +204,7 @@ function TodoControllerFunction($firebaseArray){
 >
 > **`child("todos")`** - This method drills down to a particular reference in our Firebase DB. In this case, we are accessing the "todos" reference.
 
-Great, now that we have reference to where our todos our stored, we need to make them into objects that we can use in our app and that are saved in real time in our database. To do this, we are going to use the `$firebaseArray` method that we injected earlier into this controller/
+Great, now that we have reference to where our todos our stored, we need to make them into objects that we can use in our app and that are saved in real time in our database. To do this, we are going to use the `$firebaseArray` method that we injected earlier into this controller.
 
 ```js
 function TodoControllerFunction($firebaseArray){

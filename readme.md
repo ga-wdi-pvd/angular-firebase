@@ -1,12 +1,13 @@
 # AngularFire
-- Explain the difference between HTTP and Websockets, and provide an advantage and disadvantage of each.
+<!-- - Explain the difference between HTTP and Websockets, and provide an advantage and disadvantage of each. -->
 - Explain what AngularFire is and how it differs from Firebase.
 - Create and configure a Firebase back-end.
 - Create a Javascript front-end application that communicates with a Firebase back-end.
 
-## Framing (5 minutes / 0:05)
+## Framing
 
-Up until this point, we've used Postgres and SQL to persist data. Today we'll be exploring an alternative: Firebase.
+We've incorporated Angular into a MEN and Rails app respectively.
+Today we'll be exploring another back-end alternative: Firebase.
 
 ## Firebase
 
@@ -14,7 +15,12 @@ Up until this point, we've used Postgres and SQL to persist data. Today we'll be
 
 Firebase is a PaaS, or "Platform as a Service." That means it offers a number of cloud-based computing services, including the one that matters to us today: a realtime database. Not only can we access a Firebase DB programmatically using code, but we can also interact with data via a graphical interface in the browser.
 
-Unlike Postgres, Firebase is a NoSQL database. This means that information is not stored in tables and it does not make use of associations like `has_many` or `belongs_to`. Instead, information in a NoSQL database is stored in one big JSON tree. We will go more into what exactly it means to use a NoSQL database when we explore Javascript back-ends after Project 3.
+Like MongoDB, Firebase is a NoSQL database.
+
+<details>
+ <summary><strong>What does this mean?</strong></summary>
+Firebase has a non-relational database which stores data in one big JSON tree.
+</details>
 
 #### Why Use Firebase?
 
@@ -35,25 +41,25 @@ There are lots of notable apps that use Firebase, including Shazam and NPR One. 
 
 One way to connect an Angular application to a Firebase DB is **AngularFire**.
 
-AngularFire is a Javascript library created by Firebase. It provides us with an intuitive means of interacting with a database not unlike ActiveRecord or ngResource. We will be using the AngularFire library to access Firebase from Angular. We'll explore how to use it by building a todo app later on in this lesson but if you'd like to learn more, [the official documentation is a good place to start](https://github.com/firebase/angularfire).
+AngularFire is a Javascript library created by Firebase. It provides us with an intuitive means of interacting with a database not unlike Mongoose or ngResource. We will be using the AngularFire library to access Firebase from Angular. We'll explore how to use it by building a todo app later on in this lesson but if you'd like to learn more, [the official documentation is a good place to start](https://github.com/firebase/angularfire).
 
-## Walkthrough: A To-Do App (40 minutes / 0:45)
+## Walkthrough: A To-Do App
 
 To demonstrate how to use Firebase and Angular together, let's create a simple todo app...
 
 **[Click here](\todo.md)**
 
-## Break (10 minutes / 0:55)
+## Break
 
-## You Do: Grumblr and Firebase (60 minutes / 1:55)
+## You Do: Grumblr and Firebase
 
 Now it's your turn. For the remainder of the lesson, you will be adding Firebase to Grumblr...
 
 **[Click here](\grumblr.md)**
 
-## Break (10 minutes / 2:05)
+## Break
 
-## Closing / Questions (10 minutes / 2:15)
+## Closing / Questions
 
 ## Resources
 
